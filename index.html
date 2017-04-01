@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <style>
+    
+    body{
+      margin: 0 auto;
+      text-align: center;
+    }
+      button{
+        margin-top: 10px;
+      }
+  </style>
+</head>
+<body>
+  
+
+  <h1>Result </h1>
+  <input type="text" name="" id="Input">
+  <br>
+  <button type="button" onclick="ShowResult()">Show Result</button>
+  <br>
+  <h1 id="ShowClick"></h1>
+
+
+</body>
+
+
+<script>
+var a=document.getElementById('Input')
+function ShowResult(){
+  var a=document.getElementById('Input').value;
+  var Show=document.getElementById('ShowClick')
+    
+    if (a<=100 ) {
+        Show.innerHTML="A+";
+          if(a<=90){
+            Show.innerHTML="A";
+              if(a<=80){
+                Show.innerHTML="A-";
+                  if(a<=70){
+                    Show.innerHTML="B+";
+                     if(a<=60){
+                       Show.innerHTML="B";
+                         if(a<=50){
+                           Show.innerHTML="B-";
+                           if(a<=40){
+                            Show.innerHTML="C";
+                              if(a<=30){
+                                 Show.innerHTML="F";
+                              }
+                           }
+                         }
+                     }
+                 }
+            }
+        }
+    }
+    else{
+      Show.innerHTML="Plz enter valid number ";
+    } 
+}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
